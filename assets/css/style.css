@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+div{
+    height: 200px;
+    width: 200px;
+    margin: 2%;
+    background: black;
+}

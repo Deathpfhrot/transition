@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.container{
+    position: relative;
+    width: 50%;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overflow{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    background-color: gray;
+    opacity: 0;
+    transition: .5s ease;
+}
+.container:hover .overflow{
+    height: 100%;
+    opacity: 0.5;
+}
+
+.text{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+}
