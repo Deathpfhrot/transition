@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.transformContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    width: 60%;
+    margin: 10rem auto;
+}
+
+article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    background-color: rgb(30, 189, 30);
+    border-radius: 10px;
+    color: white;
+    font-size: 2rem;
+    transition: all 1s ease-in-out;
+
+}
+
+
+.transform1:hover{
+    transform: translate(40px, 40px);
+}
+
+.transform2:hover{
+    transform: translateX(-40px);
+}
+
+.transform3:hover{
+    transform: translateY(40px);
+}
+
+.transform4:hover{
+    transform: rotate(45deg);
+}
+
+.transform5:hover{
+    transform: scale(1, 1.5);
+}
+
+.transform6:hover{
+    transform: skew(20deg, 20deg);
+}

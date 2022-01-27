@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.transformContainer{
+    height: 300px;
+    width: 300px;
+    background-color: tomato;
+    margin: 5rem auto;
+    border-radius: 1rem;
+    transition: 2s ease-in-out;
+}
+
+.transformContainer:hover{
+    transform: rotate(90deg) scale(1.3) translateX(150px);
+}

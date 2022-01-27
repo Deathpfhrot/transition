@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background-color: black;
+}
+
+.transformCollecter{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 15rem auto;
+    perspective: 1000px;
+}
+
+section{
+    display: flex;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    transform: rotateY(-20deg) skew(-10deg, 0deg);
+    margin: -5px;
+}
+
+section:hover{
+    transform: scale(1.1) skew(-13deg, 3deg);
+}
+
+article{
+    margin-left: 2rem;
+
+}
+
+article h1{
+    margin-bottom: 1rem;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+}
+
+
+.transformContainer1{
+    background-color: lightblue;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+.transformContainer1:hover{
+    opacity: 1;
+    transition: 1s;
+
+}
+
+.transformContainer2{
+    background-color: yellow;
+    opacity: 0.9;
+}
+
+.transformContainer2:hover{
+    opacity: 1;
+    z-index: 2;
+    transition: 1s;
+
+}
+
+.transformContainer3{
+    background-color: thistle;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.transformContainer3:hover{
+    z-index: 2;
+    opacity: 1;
+    transition: 1s;
+    
+}
+
+
