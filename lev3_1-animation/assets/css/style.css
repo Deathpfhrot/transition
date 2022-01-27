@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+section{
+    height: 100vh;
+    position: relative;
+}
+
+.ball{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: black;
+    animation: ballcolor 4s infinite forwards;
+}
+
+.ball2{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: black;
+    animation: ballcolor 4s 1s infinite forwards;
+}
+
+.ball3{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: black;
+    animation: ballcolor 4s 2s infinite forwards;
+}
+
+.ball4{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: black;
+    animation: ballcolor 4s 3s infinite forwards;
+}
+
+
+@keyframes ballcolor {
+    0%, 100% {
+        top:0;
+        left: 0;
+        transition: 0s;
+        background-color: blue;
+    }
+    25% {
+        top: 0;
+        left: 95%;
+        transition: 2s;
+        background-color: yellow;
+    }
+    50% {
+        left: 95%;
+        top: 90%;
+        transition: 4s;
+        background-color: red;
+    }
+    75% {
+        top: 90%;
+        right: 95%;
+        background-color: green;
+    }
+    80%{
+        right: 100%;
+        left: 0%;
+        background-color: orange;
+    }
+}
+
